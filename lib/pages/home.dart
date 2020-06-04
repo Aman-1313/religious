@@ -1,18 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:religious/pages/sikh_path.dart';
-import 'createRoute.dart';
+import 'file:///C:/Users/amans/AndroidStudioProjects/religious/lib/sikh_files/sikh_path.dart';
+import 'file:///C:/Users/amans/AndroidStudioProjects/religious/lib/sikh_files/sikhism.dart';
+import '../common_files/createRoute.dart';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
-class HomePage extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
-
-class _HomeState extends State<HomePage> {
+class HomePage extends StatelessWidget {
   Widget cards(
     String name,
     String image,
@@ -41,47 +34,6 @@ class _HomeState extends State<HomePage> {
                   ),
                 ],
               ),
-
-//            SizedBox(
-//              height: 20,
-//            ),
-//            Row(
-//              children: <Widget>[
-//                FlatButton(
-//                  padding: EdgeInsets.all(0),
-//                  onPressed: () {},
-//                  child: Container(
-//                    padding: EdgeInsets.all(5),
-//                    decoration: BoxDecoration(
-//                      border: Border.all(color: Colors.black),
-//                      color: Colors.black,
-//                    ),
-//                    child: Text(
-//                      'Listen to music',
-//                      style: TextStyle(color: Colors.white, fontSize: 15),
-//                    ),
-//                  ),
-//                ),
-//                SizedBox(
-//                  width: 2,
-//                ),
-//                FlatButton(
-//                  padding: EdgeInsets.all(0),
-//                  onPressed: () {},
-//                  child: Container(
-//                    decoration: BoxDecoration(
-//                      border: Border.all(color: Colors.black),
-//                      color: color,
-//                    ),
-//                    padding: EdgeInsets.all(5),
-//                    child: Text(
-//                      'Read Holy books',
-//                      style: TextStyle(color: Colors.black, fontSize: 15),
-//                    ),
-//                  ),
-//                ),
-//              ],
-//            )
             ],
           ),
         ),
@@ -95,24 +47,18 @@ class _HomeState extends State<HomePage> {
     final image = ['om.png', 'waheguru.jpg', 'islam.jpg', 'christian.jpg'];
     final func = [
       () {
-        Navigator.of(context).push(createRoute(SikhPath()));
+        Navigator.of(context).push(createRoute(Sikhism()));
       },
       () {
-        Navigator.of(context).push(createRoute(SikhPath()));
+        Navigator.of(context).push(createRoute(Sikhism()));
       },
       () {
-        Navigator.of(context).push(createRoute(SikhPath()));
+        Navigator.of(context).push(createRoute(Sikhism()));
       },
       () {
-        Navigator.of(context).push(createRoute(SikhPath()));
+        Navigator.of(context).push(createRoute(Sikhism()));
       }
     ];
-//    final color = [
-//      Colors.orange,
-//      Colors.deepOrangeAccent,
-//      Color(0xFF007332),
-//      Color(0xFFF6EAD8)
-//    ];
     return SafeArea(
       child: Container(
         color: Colors.grey[200],
@@ -133,146 +79,3 @@ class _HomeState extends State<HomePage> {
     );
   }
 }
-
-//class HomePage extends StatefulWidget {
-//  @override
-//  _HomePageState createState() => _HomePageState();
-//}
-//
-//class _HomePageState extends State<HomePage> {
-//  @override
-//  Widget build(BuildContext context) {
-//    return Scaffold(
-//      backgroundColor: Color(0xFFF9F9F9),
-//      body: Container(
-//        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-//        child: ListView(children: <Widget>[
-//          Container(
-//            padding: EdgeInsets.all(20),
-//            child: Column(
-//              crossAxisAlignment: CrossAxisAlignment.start,
-//              children: <Widget>[
-//                SizedBox(
-//                  height: 10,
-//                  child: Divider(
-//                    color: Colors.black,
-//                  ),
-//                ),
-//                Religions(
-//                  name: 'Hindu',
-//                  image: 'om.png',
-//                  color: Colors.orange,
-//                ),
-//                SizedBox(
-//                  height: 10,
-//                  child: Divider(
-//                    color: Colors.black,
-//                  ),
-//                ),
-//                Religions(
-//                  name: 'Sikhism',
-//                  image: 'waheguru.jpg',
-//                  color: Colors.deepOrangeAccent,
-//                  getholyBook: () {
-//                    Navigator.of(context).push(createRoute(SikhPath()));
-//                  },
-//                ),
-//                SizedBox(
-//                  height: 10,
-//                  child: Divider(
-//                    color: Colors.black,
-//                  ),
-//                ),
-//                Religions(
-//                  name: 'Islam',
-//                  image: 'islam.jpg',
-//                  color: Color(0xFF007332),
-//                ),
-//                SizedBox(
-//                  height: 10,
-//                  child: Divider(
-//                    color: Colors.black,
-//                  ),
-//                ),
-//                Religions(
-//                  name: 'Christian',
-//                  image: 'christian.jpg',
-//                  color: Color(0xFFF6EAD8),
-//                )
-//              ],
-//            ),
-//          ),
-//        ]),
-//      ),
-//    );
-//    ;
-//  }
-//}
-//
-//class Religions extends StatelessWidget {
-//  final String name;
-//  final String image;
-//  final Color color;
-//  final Function getholyBook;
-//  Religions({this.name, this.image, this.color, this.getholyBook});
-//  @override
-//  Widget build(BuildContext context) {
-//    return Column(
-//      children: <Widget>[
-//        Row(
-//          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//          children: <Widget>[
-//            Text(
-//              name,
-//              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 40),
-//            ),
-//            CircleAvatar(
-//              radius: 50,
-//              backgroundImage: AssetImage('images/$image'),
-//            )
-//          ],
-//        ),
-//        SizedBox(
-//          height: 60,
-//        ),
-//        Row(
-//          children: <Widget>[
-//            FlatButton(
-//              padding: EdgeInsets.all(0),
-//              onPressed: () {},
-//              child: Container(
-//                padding: EdgeInsets.all(5),
-//                decoration: BoxDecoration(
-//                  border: Border.all(color: Colors.black),
-//                  color: Colors.black,
-//                ),
-//                child: Text(
-//                  'Listen to music',
-//                  style: TextStyle(color: Colors.white, fontSize: 15),
-//                ),
-//              ),
-//            ),
-//            SizedBox(
-//              width: 2,
-//            ),
-//            FlatButton(
-//              padding: EdgeInsets.all(0),
-//              onPressed: getholyBook,
-//              child: Container(
-//                decoration: BoxDecoration(
-//                  border: Border.all(color: Colors.black),
-//                  color: color,
-//                ),
-//                padding: EdgeInsets.all(5),
-//                child: Text(
-//                  'Read Holy books',
-//                  style: TextStyle(color: Colors.black, fontSize: 15),
-//                ),
-//              ),
-//            ),
-//          ],
-//        )
-//      ],
-//    );
-//  }
-//}
