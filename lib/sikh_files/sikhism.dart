@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'file:///C:/Users/amans/AndroidStudioProjects/religious/lib/sikh_files/sikh_path.dart';
+import 'package:religious/pages/home_screen.dart';
+import 'package:religious/sikh_files/vichar.dart';
 
 class Sikhism extends StatefulWidget {
   @override
@@ -8,18 +10,10 @@ class Sikhism extends StatefulWidget {
 
 class _SikhismState extends State<Sikhism> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     SikhPath(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    HomeScreen(),
+    Vichar(),
   ];
 
   void _onItemTapped(int index) {
@@ -46,7 +40,7 @@ class _SikhismState extends State<Sikhism> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
-            title: Text('School'),
+            title: Text('ਕੱਥਾ ਵਿਚਾਰ'),
           ),
         ],
         currentIndex: _selectedIndex,

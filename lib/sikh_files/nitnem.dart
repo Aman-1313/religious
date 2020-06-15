@@ -32,7 +32,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਜਪੁਜੀ ਸਾਹਿਬ',
                   myClass: ViewPage(
                     title: 'ਜਪੁਜੀ ਸਾਹਿਬ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'Japji.pdf',
                   ),
                 ),
                 SizedBox(
@@ -45,7 +45,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਸ਼ਬਦ ਹਜ਼ਾਰੇ',
                   myClass: ViewPage(
                     title: 'ਸ਼ਬਦ ਹਜ਼ਾਰੇ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'ShabadHazarey.pdf',
                   ),
                 ),
                 SizedBox(
@@ -71,7 +71,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸ੍ਵਯੇ',
                   myClass: ViewPage(
                     title: 'ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸ੍ਵਯੇ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'Svaye.pdf',
                   ),
                 ),
                 SizedBox(
@@ -84,7 +84,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਚੌਪਈ ਸਾਹਿਬ',
                   myClass: ViewPage(
                     title: 'ਚੌਪਈ ਸਾਹਿਬ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'Chaupai.pdf',
                   ),
                 ),
                 SizedBox(
@@ -97,7 +97,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਅਨੰਦੁ ਸਾਹਿਬ',
                   myClass: ViewPage(
                     title: 'ਅਨੰਦੁ ਸਾਹਿਬ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'AnandSahib.pdf',
                   ),
                 ),
                 SizedBox(
@@ -110,7 +110,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਰਹਰਾਸਿ ਸਾਹਿਬ',
                   myClass: ViewPage(
                     title: 'ਰਹਰਾਸਿ ਸਾਹਿਬ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'Rehiras.pdf',
                   ),
                 ),
                 SizedBox(
@@ -123,7 +123,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਸੋਹਿਲਾ',
                   myClass: ViewPage(
                     title: 'ਸੋਹਿਲਾ',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'KirtanSohila.pdf',
                   ),
                 ),
                 SizedBox(
@@ -136,7 +136,7 @@ class _NitnemState extends State<Nitnem> {
                   name: 'ਬਾਰਹ ਮਾਹਾ ਮਾਝ ਮਹਲਾ ੫',
                   myClass: ViewPage(
                     title: 'ਬਾਰਹ ਮਾਹਾ ਮਾਝ ਮਹਲਾ ੫',
-                    fileName: 'AsaDiVar.pdf',
+                    fileName: 'BaarehMaahaa.pdf',
                   ),
                 )
               ],

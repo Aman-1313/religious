@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:religious/common_files/view_page.dart';
 import '../common_files/card_view.dart';
 import 'nitnem.dart';
 
@@ -40,7 +41,10 @@ class _SikhPathState extends State<SikhPath> {
                 ),
                 CardView(
                   name: 'ਸੁਖਮਨੀ ਸਾਹਿਬ',
-                  myClass: Nitnem(),
+                  myClass: ViewPage(
+                    title: 'ਸੁਖਮਨੀ ਸਾਹਿਬ',
+                    fileName: 'SukhmaniSahib.pdf',
+                  ),
                 ),
                 SizedBox(
                   height: 10,
@@ -50,7 +54,10 @@ class _SikhPathState extends State<SikhPath> {
                 ),
                 CardView(
                   name: 'ਅਰਦਾਸ',
-                  myClass: Nitnem(),
+                  myClass: ViewPage(
+                    title: 'ਅਰਦਾਸ',
+                    fileName: 'Ardas.pdf',
+                  ),
                 ),
                 SizedBox(
                   height: 10,
@@ -60,7 +67,10 @@ class _SikhPathState extends State<SikhPath> {
                 ),
                 CardView(
                   name: 'ਸ਼ੀ੍ ਗੁਰੂ ਗ੍ੰਥ ਸਾਹਿਬ ਜੀ',
-                  myClass: Nitnem(),
+                  myClass: ViewPage(
+                    title: 'ਸ਼ੀ੍ ਗੁਰੂ ਗ੍ੰਥ ਸਾਹਿਬ ਜੀ',
+                    fileName: 'sirigurugranthsahib.pdf',
+                  ),
                 ),
               ],
             ),
